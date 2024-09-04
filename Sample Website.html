@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksha Rangers - Women Safety Monitoring</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        .container {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .map {
+            height: 300px;
+            background-color: #ccc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 1.1em;
+        }
+        .alert {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .live-monitoring, .incident-management {
+            margin-top: 60px;
+        }
+        .section-header {
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .camera-feed {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .camera-feed h3 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raksha Rangers - Women Safety Monitoring</h1>
+    </header>
+    <nav>
+        <a href="#home">Home Dashboard</a>
+        <a href="#live-monitoring">Live Monitoring</a>
+        <a href="#incident-management">Incident Management</a>
+        <a href="#alert-configuration">Alert Configuration</a>
+        <a href="#analytics-reports">Analytics & Reports</a>
+        <a href="#user-management">User Management</a>
+    </nav>
+    <div class="container">
+        <!-- Home Dashboard Section -->
+        <div id="home" class="dashboard">
+            <div class="card">
+                <h3>System Overview</h3>
+                <p><strong>Active Cameras:</strong> 50</p>
+                <p><strong>Incidents Detected Today:</strong> 5</p>
+                <p><strong>Pending Alerts:</strong> 2</p>
+            </div>
+            <div class="card">
+                <h3>Real-Time Alerts</h3>
+                <div class="alert">
+                    <p><strong>Location:</strong> Market Street</p>
+                    <p><strong>Timestamp:</strong> 14:35</p>
+                    <p><strong>Anomaly:</strong> Lone woman at night</p>
+                </div>
+                <div class="alert">
+                    <p><strong>Location:</strong> Park Avenue</p>
+                    <p><strong>Timestamp:</strong> 15:20</p>
+                    <p><strong>Anomaly:</strong> Unusual gathering</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>System Health</h3>
+                <p><strong>AWS Services:</strong> Operational</p>
+                <p><strong>Camera Connectivity:</strong> Stable</p>
+                <p><strong>Streaming Health:</strong> Good</p>
+            </div>
+        </div>
+
+        <!-- Map Integration -->
+        <div class="dashboard">
+            <div class="card">
+                <h3>Map Integration</h3>
+                <div class="map">
+                    <!-- Replace with actual map integration -->
+                    <p>Interactive map showing real-time anomaly locations</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Monitoring Section -->
+        <div id="live-monitoring" class="live-monitoring">
+            <div class="section-header">
+                <h2>Live Monitoring</h2>
+            </div>
+            <div class="camera-feed">
+                <h3>Multi-Camera View</h3>
+                <p>Feed 1 | Feed 2 | Feed 3</p>
+                <p>Toggle between feeds or focus on specific areas.</p>
+            </div>
+            <div class="camera-feed">
+                <h3>Dynamic Alerts</h3>
+                <p>Real-time alerts with quick actions (Investigate, Dismiss, Escalate)</p>
+            </div>
+            <div class="camera-feed">
+                <h3>Focus Mode</h3>
+                <p>Ability to enlarge a specific feed for closer inspection.</p>
+            </div>
+        </div>
+
+        <!-- Incident Management Section -->
+        <div id="incident-management" class="incident-management">
+            <div class="section-header">
+                <h2>Incident Management</h2>
+            </div>
+            <div class="card">
+                <h3>Incident Queue</h3>
+                <p>List of active incidents prioritized by severity.</p>
+            </div>
+            <div class="card">
+                <h3>Incident Reports</h3>
+                <p>Detailed reports including video snapshots and anomaly details.</p>
+            </div>
+            <div class="card">
+                <h3>Case History</h3>
+                <p>Archive of past incidents with search and filter options.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
